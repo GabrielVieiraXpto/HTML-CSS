@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grounping Tags</title>
+
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgrey;
+            margin: 0;
+        }
+
+        header
+        {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            
+
+        }
+        header > nav
+        {
+            padding: 3px;
+            background-color: dimgray;
+            box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.363);
+        }
+
+     
+        nav > a
+        {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav>a:hover
+        {
+            text-decoration: underline;
+        }
+        main
+        {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.336)
+
+        }
+        #Noticias
+        {
+            background-color: rgb(177, 177, 177);
+            padding: 10px 5px;
+        }
+        aside
+        {
+            background-color: dimgray;
+        }
+
+        footer
+        {
+            color: white;
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+
+        }
+
+        footer >p
+        {
+            margin: 0px;
+        }
+        div#bola
+        {
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+        </section>
+
+        <section id="Noticias">
+            <article>
+                 <h2>Noticias Sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti a, minima quo nihil optio laboriosam deserunt esse, autem sit repudiandae consectetur architecto ad iste quia. Id ullam magni laboriosam voluptas?</p>
+                <aside>
+                <p>Artigo escrito por X</p>
+                </aside>
+            </article>            
+
+        </section>
+    </main>
+    
+    <footer>
+        <p>Desenvolvido por Gabriel</p>
+    </footer>
+    
+    <div id="bola">
+
+    </div>
+</body>
+</html>

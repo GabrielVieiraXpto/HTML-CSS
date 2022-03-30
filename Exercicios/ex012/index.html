@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>
+        Este vídeo está hospedado no meu próprio servidor <br>
+        <video src="midia/meu_videoMP4.mp4" controls width="500"></video>
+    </p>
+
+    <video controls width="300" poster="imagens/1129967.jpg">
+        <source src="midia/Meu VideoM4V.m4v" type="video/mp4">
+        <source src="midia/meu_videoMP4.mp4" type="video/mp4">
+        <source src="midia/Meu VideoWEBM.webm" type="video/webm">
+        <source src="midia/meu_videoOGV.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    
+    <h1>Utilizando serviços de hospedagem de videos (Youtube)</h1>
+    <p>
+        Para diminuir custos e consumo de banda e não precisar inserir diferentes formatos <br>
+        <!--youtube - compartilhar - incorporar - gera o código html-->
+        (Youtube) <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DIraePpIAog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>(Vimeo) <br>
+        <iframe src="https://player.vimeo.com/video/7636697?h=ad4069f09e" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </p>
+</body>
+</html>

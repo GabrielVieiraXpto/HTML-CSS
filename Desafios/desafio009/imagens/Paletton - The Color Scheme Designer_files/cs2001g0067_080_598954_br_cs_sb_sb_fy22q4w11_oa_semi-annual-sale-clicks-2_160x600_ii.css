@@ -1,0 +1,413 @@
+/*-------------------------------------
+  Reset
+---------------------------------------*/
+
+/******Basic settings**********/
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+img{
+  border: 0px;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: 'Roboto', sans-serif; color: #808080;
+}
+.font-preloader{
+  font-family:'Roboto';
+  visibility:hidden;
+  width:0; 
+  height:0;
+}
+
+#frame_one, #frame_two,#frame_three,#frame_four,#frame_five {
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------------------
+  Layout
+---------------------------------------*/
+
+#ad {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#banner {
+  position: absolute;
+  background: #ffffff;
+  display: block;
+  width: 160px;
+  height: 600px;
+  overflow: hidden;
+  cursor: pointer;
+  visibility: hidden; 
+  border: 1px solid #808080;
+  -webkit-box-sizing: border-box;  
+          box-sizing: border-box;  
+}
+#clickTAG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.ie-fallback{
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+/*-------------------------------------
+  Frame One frame duration: 3s
+---------------------------------------*/
+.bg {
+	position: absolute;
+	top: -1px;
+	left: -1px;
+}
+.dell-logo {
+  position: absolute;
+  transform: translate(-50%,0%);
+  top: 12px;
+  left: 50%;
+}
+.lookup {
+	position: absolute;
+  transform: translate(-50%,0%);
+	top: 75px;
+	left: 50%;
+}
+.vendor-logo,
+.vendor-logof3,
+.vendor-logof4,
+.vendor-logof5 {
+  position: absolute;
+  transform: translate(-50%,0%);
+  bottom: 28px;
+  left: 50%;
+}
+.vendor-copy {
+  position: absolute;
+  font-size: 9px;
+  line-height: 11px;
+  font-weight: 400;
+  text-align: center;
+  color: #808080;
+  bottom: 73px;
+  width: 100%;
+}
+.cta{
+  position: absolute;
+  color: #808080;
+  border: #808080 1px solid;
+  text-align: center;
+  right: 22px;
+  bottom: 125px;
+  display: block;
+  z-index: 99;
+  padding: 7px 10px 6px 9px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+@-moz-document url-prefix() {
+  .cta {padding: 6px 10px 6px 9px;}
+}
+
+/*-------------------------------------
+  Frame two  frame duration: 3s
+---------------------------------------*/
+
+
+.title2 {
+  position: absolute;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #808080;
+  top: 225px;
+  width: 100%;
+}
+
+.cta2{
+  position: absolute;
+  color: #808080;
+  border: #808080 1px solid;
+  text-align: center;
+  right: 37px;
+  bottom: 45px;
+  display: block;
+  z-index: 99;
+  padding: 7px 10px 6px 9px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+@-moz-document url-prefix() {
+  .cta2 {padding: 6px 10px 6px 9px;}
+}
+
+/*-------------------------------------
+  Frame Three  frame duration: 3s
+---------------------------------------*/
+
+.title3 {
+  width: 100%;
+  position: absolute;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #808080;
+  top: 195px;
+}
+.product3 {
+	position: absolute;
+	top: 250px;
+	left: -10px;
+}
+.f3-price{
+  position: absolute;
+  bottom: 222px;
+  left: 10px;
+  color: #808080;
+  width: 140px;
+  text-align: center;
+}
+.f3-price_hl{
+  font-size: 14px;
+  line-height: 14px;
+  color: #808080;  
+  font-weight: 400;
+  margin-bottom:1px;
+  display: block;
+}
+.f3-config-price {
+  font-size: 20px;
+  color: #808080;
+  display: block;
+  line-height: 21px;
+  font-weight: 500;
+  margin-top: 4px;  
+}
+.f3-config-price sup {
+  font-size:11px;
+  line-height:11px;
+  position: relative;
+  top: 2px;
+}
+.f3-config-name {
+  font-size: 12px;
+  color: #808080;
+  font-weight: 400;
+  display: block;
+}
+
+
+/*-------------------------------------
+ Frame Four  frame duration: 3s
+---------------------------------------*/
+.title4 {
+  width: 100%;
+  position: absolute;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #808080;
+  top: 155px;
+}
+.f4-price{
+  position: absolute;
+  bottom: 182px;
+  left: 10px;
+  color: #808080;
+  width: 140px;
+  text-align: center;
+}
+.f4-price_hl{
+  width: 100%;
+  position: absolute;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #808080;
+  top: 181px;
+}
+.f4-config-price {
+  font-size: 20px;
+  color: #808080;
+  display: block;
+  line-height: 21px;
+  font-weight: 500;
+  margin-top: 4px;  
+}
+.f4-config-price sup {
+  font-size:11px;
+  line-height:11px;
+  position: relative;
+  top: 2px;
+}
+.f4-config-name {
+  font-size: 12px;
+  color: #808080;
+  font-weight: 400;
+  display: block;
+}
+.product4{
+	position: absolute;
+	top: 220px;
+	left: 33px;
+}
+
+
+/*-------------------------------------
+  Frame Five  frame duration: 3s
+---------------------------------------*/
+.title5 {
+  width: 100%;
+  position: absolute;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #808080;
+  top: 155px;
+}
+.f5-price{
+  position: absolute;
+  bottom: 250px;
+  left: 10px;
+  color: #808080;
+  width: 140px;
+  text-align: center;
+}
+.f5-price_hl{
+  width: 100%;
+  position: absolute;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #808080;
+  top: 181px;
+}
+.f5-config-price {
+  font-size: 20px;
+  color: #808080;
+  display: block;
+  line-height: 21px;
+  font-weight: 500;
+  margin-top: 4px;  
+}
+.f5-config-price sup {
+  font-size:11px;
+  line-height:11px;
+  position: relative;
+  top: 2px;
+}
+.f5-config-name {
+  font-size: 12px;
+  color: #808080;
+  font-weight: 400;
+  display: block;
+}
+.product5{
+	position: absolute;
+	top: 230px;
+	left: -1px;
+}
+
+.cta3{
+  position: absolute;
+  color: #808080;
+  border: #808080 1px solid;
+  text-align: center;
+  right: 37px;
+  bottom: 118px;
+  display: block;
+  z-index: 99;
+  padding: 7px 10px 6px 9px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+@-moz-document url-prefix() {
+  .cta3 {padding: 6px 10px 6px 9px;}
+}
+
+.vendor-copyf5 {
+  position: absolute;
+  font-size: 9px;
+  line-height: 12px;
+  font-weight: 300;
+  text-align: center;
+  color: #444444;
+  bottom: 6px;
+  right: 0px;
+  width: 160px;  
+  /*text-shadow: 0px 0px 0px #000000;*/
+}
+/*Roll over*/
+
+#roll-cta {
+  position: absolute;
+  color: #808080;
+  bottom: 98px;
+  right: 40px;
+  z-index: 99999;
+  width: 80px;
+  height: 15px;
+}
+#legal {
+  position: absolute;
+  width: 160px;
+  height: 600px;
+  background:#fff;
+  top:-1000px;
+  z-index: 999;
+}
+#legal-text {
+  position: absolute;
+  color: #808080;
+  width: 155px;
+  height: 600px;
+  font-size: 8px;
+  line-height: 8px;
+  text-align: justify;
+  padding: 8px 10px;
+}
+#rolltext {
+  color: #808080;
+  position: absolute;
+  z-index: 9;
+  bottom: 100px;
+  right: 50px;
+  font-size: 9px;
+}

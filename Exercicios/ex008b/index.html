@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto Parte 2</title>
+</head>
+<body>
+    <h1>Formatações de Texto 2 </h1>
+    
+    <h2>Código-Fonte</h2>
+    <p>O comando  <code>document.getElementByld('teste')</code> é escrito em linguagem javaScript e está com a tag code para tornar o texto mono-espaçado para facilitar a leitura</p><!--Partes de código-->
+
+    <pre><!--todo texto é considerado, espaços, quebra delinha, tabulações,...-->
+        <code>
+            int valor=Int32.Parse(Console.Readline());
+            if(valor%2==0)
+            {
+                Console.Writeline("O número é Par")
+            }
+            else
+            {
+                Console.Writeline(O número é Impar )
+            }
+        </code>
+    </pre>
+
+    <h2>Citações Simples</h2>
+    <p>Para realizar citações com semântica é utilizado a tag q(pois está dando sentido): <q>O computador é um burro muito rápido</q></p>
+
+    <h2>Citações Completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos: </p>
+    <!--O texto é deslocado e indica que é uma citação de um determinado autor, sendo possivel indicar também para os mecanismos de busca a url da origem do texto-->
+    <blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&printsec=frontcover&hl=pt-BR&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false">
+        A diferença entre inlines e um bloco de texto é importante. Os elemtos HTMl deste Capítulo descrevem os blocos de texto. 
+    </blockquote>
+    
+    <h2>Abreviações</h2>
+    <p>É possivel indicar para os visitantes e os mecanismo de busca o significado das abreviações, como <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="ltr">O texto vai ficar invertido</bdo></p>
+    
+
+</body>
+</html>

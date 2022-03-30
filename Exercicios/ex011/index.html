@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente Abrir este site em vários dispositivos ou simplesmente aumente e diminua o tamanho da página do seu navegador</p>
+    
+    <picture>
+        <source media="(max-width:750px )" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture> 
+
+    <h1>Reproduzir Áudio</h1>
+    <p>É possivel reproduzir áudios por meio do HTML5, formatos comuns:</p>
+    <ul>
+        <li>MP3</li>
+        <li>Wav</li>
+        <li>OGG</li>
+    </ul>
+    <audio src="audios/Anomalous Hedges - Mini Vandals.mp3" controls ></audio>
+    <p>Outra forma de adicionar arquivos</p>
+    <audio preload="metadata" controls><!--prepolad indica o estado do carregamento dos arquivos, auto(padrão)carrega tudo antes de abrir a pag, metadata carrega o essencial como data e duração e none nada só ao clicar -->
+        <!--vai testar todos as opções e vai mandar a primeira que funcionar-->
+            <source src="audios/Anomalous Hedges - Mini Vandals.mp3" type="audio/mpeg" >
+            <source src="audios/Anomalous Hedges - Mini Vandals.ogg" type="audio/ogg" >
+            <source src="audios/Anomalous Hedges - Mini Vandals.mav" type="audio/wav" >
+            <p>Infelizmente seu navegador não consegue reproduzir áudio. <br><a href="audios/Anomalous Hedges - Mini Vandals.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+
+
+
+
+</body>
+</html>

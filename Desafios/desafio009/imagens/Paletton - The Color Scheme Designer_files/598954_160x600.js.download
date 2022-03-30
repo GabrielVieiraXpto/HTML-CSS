@@ -1,0 +1,69 @@
+var banner = document.getElementById('banner');
+var legal = document.getElementById('roll-cta');
+
+var tl = new TimelineMax({repeat:0, repeatDelay:2.2});
+    
+	tl.set(banner, {visibility: "visible"})
+
+	/*frame one*/	
+	.add("frame1")
+	.from(".bg", 0, {alpha:1, ease: Power1.easeInOut})
+	.staggerFrom(".lookup ", .4, {alpha:0, ease: Power2.easeInOut}, .1, "frame1")
+	.from(".dell-logo, .vendor-copy, .vendor-logo", .5, {alpha:0, ease: Power2.easeInOut}, "frame1")
+	.to(".dell-logo, .bg, .vendor-copy, .vendor-logo", .4, {alpha:0, ease: Power2.easeInOut}, "frame1+=2.5")
+
+	/*frame two*/
+	.add("frame2","frame1+=3")
+	.from(".cta2", .4, {alpha:0, ease: Power2.easeInOut}, "frame2")
+	.from(".title2", .4, {alpha:0, ease: Power2.easeInOut}, "frame2")
+	.to(".title2", .4, {alpha:0, ease: Power2.easeInOut}, "frame2+=2.8")
+	
+	/*frame three*/
+	.add("frame3","frame2+=3")
+	.from(".product3", .4, {x:300, ease: Power2.easeInOut}, "frame3-=.2")
+	.from(".title3", .4, {x:300, ease: Power2.easeInOut}, "frame3")
+	.staggerFrom(".f3-price_hl, .f3-config-price, .f3-config-name", .4, {x:-300, ease: Power2.easeInOut}, .1, "frame3")
+	.from(".cta, .vendor-logof3", .4, {alpha:0, ease: Power2.easeInOut}, "frame3")
+	.to(".product3", .4, {x:300, ease: Power2.easeInOut}, "frame3+=2.8")
+	.to(".f3-price", .4, {alpha:0, ease: Power2.easeInOut}, "frame3+=2.8")
+	.to(".title3", .4, {alpha:0, ease: Power2.easeInOut}, "frame3+=2.8")
+
+	/*frame four*/
+	.add("frame4","frame3+=3")
+	.from(".product4", .4, {x:-300, ease: Power2.easeInOut}, "frame4")
+	.from(".title4", .4, {x:300, ease: Power2.easeInOut}, "frame4")
+	.staggerFrom(".f4-price_hl, .f4-config-price, .f4-config-name", .4, {x:-300, ease: Power2.easeInOut}, .1, "frame4")
+	.from(".vendor-logof4", .4, {alpha:0, ease: Power2.easeInOut}, "frame4")
+	.to(".product4", .4, {x:-300, ease: Power2.easeInOut}, "frame4+=2.8")
+	.to(".f4-price, .f4-price_hl, .cta2, .title4", .4, {alpha:0, ease: Power2.easeInOut}, "frame4+=2.8")
+
+	// /*frame five*/
+	.add("frame5","frame4+=3")
+	.from(".cta3, .vendor-logof5, .vendor-copyf5, .title5", .4, {alpha:0, ease: Power2.easeInOut}, "frame5")
+	.from(".product5", .4, {x:300, ease: Power2.easeInOut}, "frame5")
+	.to(".dell-logo", .4, {alpha:1, ease: Power2.easeInOut}, "frame5")
+	.staggerFrom(".f5-price_hl, .f5-config-price, .f5-config-name", .4, {x:-300, ease: Power2.easeInOut}, .1, "frame5")
+
+	/*roll over
+  .from("#roll-cta", .2, {alpha:0, x:-300, ease:Power4.easeout}, "frame5+=0.3")
+  .from("#rolltext", .2, {alpha:0, ease:Power4.easeout}, "frame5+=0.3")
+  .from("#legal-text", .2, {alpha:0, ease:Power4.easeout}, "frame5+=0.3")
+  
+	legal.addEventListener("mouseover",legalHover);
+	function legalHover(){
+		tl.pause();
+		TweenMax.to("#legal", .3, {top:0, ease:Power1.easeOut})  
+  }
+  
+	legal.addEventListener("mouseout",legalOut);
+	function legalOut(){
+		tl.play();
+		TweenMax.to("#legal", .3, {top:-1000, ease:Power1.easeIn})
+	}
+*/
+  ;
+//tl.seek().pause(14);
+
+  // tl.seek("loop")
+  var currentDuration = tl.duration();
+  console.log(currentDuration);  

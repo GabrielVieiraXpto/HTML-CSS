@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'novaFonteTech';
+    src: url(pacote/fontes/idroid.otf);
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #84E1AD;
+}
+.robo
+{
+    font-family: 'novaFonteTech';
+    color: #1F5F3D;
+    
+}
+.robo2
+{
+    font-family: 'novaFonteTech';
+    color: #1F5F3D;
+    background-image: linear-gradient(to right, #C4EBD5, #FFFFFF);
+}
+
+header
+{
+    background-image: linear-gradient(to top, #175132, #55E193);
+  
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+nav
+{
+    
+    text-align: left;
+  
+    
+}
+nav>a
+{
+    margin-right: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav>a:hover
+{
+    background-color: #55E193 ;
+}
+main
+{
+    padding: 0px;
+
+   
+}
+main>p
+{
+    text-indent: 10px;
+}
+.margin
+{
+    margin: 0px 150px;
+}
+section
+{
+    background-color: white;
+    margin: 0px 150px;
+    padding: 25px;
+    
+}
+h2
+{
+   margin: 0;
+ 
+}
+ul
+{
+    
+    display: inline-block;
+    height: 100px ;
+    width: 225px;
+}
+#video
+{
+    padding: 30px 30px;
+
+    outline: #1A5C38;
+    background-color: #1A5C38;
+}
+
+#aprenderMais>div
+{
+    background-color: #B2D4C1;
+    border-radius: 10px;
+    
+}
+#aprenderMais>div>h2
+{
+    color: white;
+    background-color: #2FA866;
+   
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+#aprenderMais>div>p
+{
+    padding: 10px;
+}
+
+footer
+{
+    background-color: #1A5C38;
+    color: white;
+    text-align: center;
+}
+.imagem
+{
+    margin: auto;
+}
+.linkExterno
+{
+    background-color: #C4EBD5;
+    text-decoration: none;
+    margin: 1px;
+    padding: 2px 3px;
+    color: #175132;
+    font-weight: bold;
+}
+.linkExterno:hover
+{
+    text-decoration: underline;
+}
+strong
+{
+    color: #175132;"
+}
+img
+{
+    margin: 1px;
+
+    width: 100%;
+}
